@@ -6,19 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Word Guess Game</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-
 </head>
 
 <body>
+
+    <div id="beforeWelcome">
+        <div id="fadeout">
+            <p>
+                <img id="starting-img" src="assets/images/crown2.png">
+            </p>
+        </div>
+    </div>
+    <div id="welcomePage">
+        <div id="welcome-container">
+            <div id="welcomeText">
+                <h1>Word Guess Game</h1>
+                <div class="buttonContainer">
+                    <button id="play" class="play-btn btn">Play</button>
+                    <button id="instructions" class="inst-btn btn">Instructions</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="instructionsPage">
+        <div id="instructions-container" class="hide">
+            <div id="instructionsText">
+                <h3>How to play</h3>
+                <p>Guess the correct word. If you get 5 incorrect guesses, you lose. Type the letter you want to guess,
+                    or
+                    click on the keys.</p>
+                <div class="buttonContainer">
+                    <button id="play" class="play-btn btn">Play</button>
+                    <button id="mainMenu" class="mainMenu-btn btn">Main Menu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
     <script src="assets/javascript/game.js"></script>
-
-
-
-
-
-
-
 
 </body>
 
