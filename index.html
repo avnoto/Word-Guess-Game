@@ -21,25 +21,29 @@
     </div>
     <div id="welcomePage">
         <div id="welcome-container">
+            <img id="got-logo" src="assets/images/pngguru.com.png">
             <div id="welcomeText">
                 <h1>Word Guess Game</h1>
-                <div class="buttonContainer">
-                    <button id="play" class="play-btn btn">Play</button>
-                    <button id="instructions" class="inst-btn btn">Instructions</button>
+                <div id="buttonContainer1">
+                    <button id="play" class="play-btn btn" onclick="startGame()">Play</button>
+                    <button id="instructions" class="inst-btn btn" onclick="instructions()">Instructions</button>
                 </div>
             </div>
         </div>
     </div>
     <div id="instructionsPage">
-        <div id="instructions-container" class="hide">
-            <div id="instructionsText">
-                <h3>How to play</h3>
-                <p>Guess the correct word. If you get 5 incorrect guesses, you lose. Type the letter you want to guess,
-                    or
-                    click on the keys.</p>
-                <div class="buttonContainer">
-                    <button id="play" class="play-btn btn">Play</button>
-                    <button id="mainMenu" class="mainMenu-btn btn">Main Menu</button>
+        <div id="instructions-container">
+            <br>
+            <div id="instBody">
+                <br>
+                <h1>How to play</h1>
+                <br>
+                <p id=instText>Guess the correct word. If you get 5 incorrect guesses, you lose.
+                    Type the letter you want to guess, or click on the keys.
+                </p>
+                <div id="buttonContainer2">
+                    <button id="play1" class="play-btn btn" onclick="startGame()">Play</button>
+                    <button id="mainMenu" class="mainMenu-btn btn" onclick="backToMain()">Main Menu</button>
                 </div>
             </div>
         </div>

@@ -28,14 +28,13 @@ body {
 }
 
 #welcome-container {
-  opacity: 0;
-  transition: 2s opacity;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   margin: auto;
+  margin-top: 10px;
   text-align: center;
   display: block;
   height: 400px;
@@ -43,17 +42,14 @@ body {
 }
 
 
-.hide {
-  display: none;
-}
-
 .play-btn, .inst-btn, .mainMenu-btn {
   font-size: 1.5rem;
   font-weight: bold;
   padding: 10px 20px;
 }
 
-.buttonContainer {
+#buttonContainer1, #buttonContainer2 {
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,6 +57,38 @@ body {
 
 h1 {
   font-family: 'game_of_thronesregular';
-  font-size: 34px;
-  font-weight: 800;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+#got-logo {
+  height: 400px;
+  width: 400px;
+  opacity: 0;
+  transition: 2s opacity;
+  
+}
+
+#welcomeText {
+  opacity: 0;
+  transition: 3s opacity;
+}
+
+#instructions-container  {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+  height: 400px;
+  width: 850px;
+}
+
+#instText {
+  font-size: 18px;
 }
