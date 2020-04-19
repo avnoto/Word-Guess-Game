@@ -5,7 +5,7 @@ var guessed = [];
 var wordStatus = null;
 var gameOver = false;
 
-var wordBank = ["baratheon", "stark", "targaryen", "iron throne"];
+var wordBank = ["baratheon", "stark", "targaryen"];
 
 
 
@@ -17,16 +17,17 @@ window.onload = function() {
         }
     });
     createLetters();
-    window.setTimeout(intro, 3000);
+    //window.setTimeout(intro, 3000);
+    intro();
   }
   
-function fadeout() {
-    document.getElementById("fadeout").style.opacity = "0"; 
-  }
+//function fadeout() {
+    //document.getElementById("fadeout").style.opacity = "0"; 
+  //}
 
 
 function intro() {
-    fadeout();
+    //fadeout();
     window.setTimeout(logoFadeIn, 1000);
     logoFadeIn();
     window.setTimeout(fadein, 1000);

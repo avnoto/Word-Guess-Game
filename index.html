@@ -12,21 +12,16 @@
 </head>
 
 <body>
-    <div id="beforeWelcome">
-        <div id="fadeout">
-            <p>
-                <img id="starting-img" src="assets/images/crown2.png">
-            </p>
-        </div>
-    </div>
-    <div id="welcomePage">
-        <div id="welcome-container">
-            <img id="got-logo" src="assets/images/pngguru.com.png">
-            <div id="welcomeText">
-                <h1>Word Guess</h1>
-                <div id="buttonContainer">
-                    <button id="play" class="play-btn btn" onclick="startGame()">Play</button>
-                    <button id="instructions" class="inst-btn btn" onclick="instructions()">Instructions</button>
+    <div class="jumbotron big-banner">
+        <div id="welcomePage">
+            <div id="welcome-container">
+                <img id="got-logo" src="assets/images/pngguru.com.png">
+                <div id="welcomeText">
+                    <h1>Word Guess</h1>
+                    <div id="buttonContainer">
+                        <button id="play" class="play-btn btn" onclick="startGame()">Play</button>
+                        <button id="instructions" class="inst-btn btn" onclick="instructions()">Instructions</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -57,7 +52,8 @@
             <br>
             <br>
             <br>
-            <div class="float-right">Wrong Guesses: <span id="mistakes">0</span> of <span id="maxWrong"></span></div>
+            <div class="float-right">Wrong Guesses: <span id="mistakes">0</span> of <span id="maxWrong"></span>
+            </div>
             <p id="wordSpotlight">The word to be guessed goes here</p>
             <div id="keys">
                 <div id="letterBank">
@@ -70,18 +66,19 @@
                 <button id="newGame" class="newGame-btn btn" onclick="startGame()">New Game</button>
             </div>
         </div>
+    </div>
 
-        <script src="assets/javascript/game.js"></script>
+    <script src="assets/javascript/game.js"></script>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 
 </body>
 
