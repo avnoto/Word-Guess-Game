@@ -24,7 +24,7 @@
             <img id="got-logo" src="assets/images/pngguru.com.png">
             <div id="welcomeText">
                 <h1>Word Guess Game</h1>
-                <div id="buttonContainer1">
+                <div id="buttonContainer">
                     <button id="play" class="play-btn btn" onclick="startGame()">Play</button>
                     <button id="instructions" class="inst-btn btn" onclick="instructions()">Instructions</button>
                 </div>
@@ -41,18 +41,96 @@
                 <p id=instText>Guess the correct word. If you get 5 incorrect guesses, you lose.
                     Type the letter you want to guess, or click on the keys.
                 </p>
-                <div id="buttonContainer2">
-                    <button id="play1" class="play-btn btn" onclick="startGame()">Play</button>
+                <div id="buttonContainer">
+                    <button id="play" class="play-btn btn" onclick="startGame()">Play</button>
                     <button id="mainMenu" class="mainMenu-btn btn" onclick="backToMain()">Main Menu</button>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-
+    <div id="gamePage">
+        <div id="game-container">
+            <h1>Game is starting</h1>
+            <div class="float-right">Wrong Guesses: <span id="mistakes">0</span> of <span id="maxWrong"></span></div>
+            <p id="wordSpotlight">The word to be guessed goes here</p>
+            <div id="challengeWord">
+                <div id="line1">
+                    <div id="letter1">
+                    </div>
+                </div>
+                <div id="line2">
+                    <div id="letter2">
+                    </div>
+                </div>
+                <div id="line3">
+                    <div id="letter3">
+                    </div>
+                </div>
+                <div id="line4">
+                    <div id="letter4">
+                    </div>
+                </div>
+                <div id="line5">
+                    <div id="letter5">
+                    </div>
+                </div>
+                <div id="line6">
+                    <div id="letter6">
+                    </div>
+                </div>
+                <div id="line7">
+                    <div id="letter7">
+                    </div>
+                </div>
+                <div id="line8">
+                    <div id="letter8">
+                    </div>
+                </div>
+                <div id="line9">
+                    <div id="letter9">
+                    </div>
+                </div>
+                <div id="line10">
+                    <div id="letter10">
+                    </div>
+                </div>
+            </div>
+            <div id="keys">
+                <div id="letterBank">
+                    <div id="a" value="A" onclick="userGuess()" onkeyup="userGuess()">A</div>
+                    <div id="b" value="B" onclick="userGuess()" onkeyup="userGuess()">B</div>
+                    <div id="c" value="C" onclick="userGuess()" onkeyup="userGuess()">C</div>
+                    <div id="d" value="D" onclick="userGuess()" onkeyup="userGuess()">D</div>
+                    <div id="e" value="E" onclick="userGuess()" onkeyup="userGuess()">E</div>
+                    <div id="f" value="F" onclick="userGuess()" onkeyup="userGuess()">F</div>
+                    <div id="g" value="G" onclick="userGuess()" onkeyup="userGuess()">G</div>
+                    <div id="h" value="H" onclick="userGuess()" onkeyup="userGuess()">H</div>
+                    <div id="i" value="I" onclick="userGuess()" onkeyup="userGuess()">I</div>
+                    <div id="j" value="J" onclick="userGuess()" onkeyup="userGuess()">J</div>
+                    <div id="k" value="K" onclick="userGuess()" onkeyup="userGuess()">K</div>
+                    <div id="l" value="L" onclick="userGuess()" onkeyup="userGuess()">L</div>
+                    <div id="m" value="M" onclick="userGuess()" onkeyup="userGuess()">M</div>
+                    <div id="n" value="N" onclick="userGuess()" onkeyup="userGuess()">N</div>
+                    <div id="o" value="O" onclick="userGuess()" onkeyup="userGuess()">O</div>
+                    <div id="p" value="P" onclick="userGuess()" onkeyup="userGuess()">P</div>
+                    <div id="q" value="Q" onclick="userGuess()" onkeyup="userGuess()">Q</div>
+                    <div id="r" value="R" onclick="userGuess()" onkeyup="userGuess()">R</div>
+                    <div id="s" value="S" onclick="userGuess()" onkeyup="userGuess()">S</div>
+                    <div id="t" value="T" onclick="userGuess()" onkeyup="userGuess()">T</div>
+                    <div id="u" value="U" onclick="userGuess()" onkeyup="userGuess()">U</div>
+                    <div id="v" value="V" onclick="userGuess()" onkeyup="userGuess()">V</div>
+                    <div id="w" value="W" onclick="userGuess()" onkeyup="userGuess()">W</div>
+                    <div id="x" value="X" onclick="userGuess()" onkeyup="userGuess()">X</div>
+                    <div id="y" value="Y" onclick="userGuess()" onkeyup="userGuess()">Y</div>
+                    <div id="z" value="Z" onclick="userGuess()" onkeyup="userGuess()">Z</div>
+                </div>
+            </div>
+            <div id="buttonContainer">
+                <button id="mainMenu" class="mainMenu-btn btn" onclick="backToMain()">Main Menu</button>
+                <button id="newGame" class="newGame-btn btn" onclick="startGame()">New Game</button>
+            </div>
+        </div>
+    </div>
 
     <script src="assets/javascript/game.js"></script>
 
