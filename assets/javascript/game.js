@@ -44,13 +44,13 @@ function instructions() {
     document.getElementById("welcomePage").style.display = "none";
     document.getElementById("instructions-container").style.display = "block";
     document.getElementById("gamePage").style.display = "none";
-    
     }
 
 function backToMain() {
     document.getElementById("instructions-container").style.display = "none";
     document.getElementById("welcomePage").style.display = "block";
     document.getElementById("gamePage").style.display = "none";
+
 }
 
 function startGame() {
@@ -65,6 +65,7 @@ function startGame() {
     document.getElementById("welcomePage").style.display = "none";
     document.getElementById("gamePage").style.display = "block";
     document.getElementById("maxWrong").innerHTML = maxWrong;
+
             
     randomWord();
     guessedWord();

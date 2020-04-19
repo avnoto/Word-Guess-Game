@@ -7,7 +7,7 @@
 body {
     width: 100%;
     height: 100%;
-    background: #8da19f;
+    background: #f8f2d0;
 }
 
 /* may want to change image, fix w/h as need */
@@ -57,14 +57,13 @@ body {
 
 h1 {
   font-family: 'game_of_thronesregular';
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 500;
   letter-spacing: 3px;
 }
 
-h3 { 
+h4 { 
   font-family: 'game_of_thronesregular';
-  font-size: 16px;
   font-weight: 500;
   letter-spacing: 3px;
 }
@@ -112,7 +111,9 @@ h3 {
   text-align: center;
   height: 400px;
   width: 850px;
+
 }
+
 
 #wordSpotlight {
   font-size: 32px;
@@ -143,4 +144,5 @@ h3 {
   cursor: pointer;
   font-family: 'game_of_thronesregular';
 }
+
 
