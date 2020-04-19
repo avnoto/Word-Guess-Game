@@ -62,6 +62,13 @@ h1 {
   letter-spacing: 3px;
 }
 
+h3 { 
+  font-family: 'game_of_thronesregular';
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
 #got-logo {
   height: 400px;
   width: 400px;
