@@ -1,11 +1,11 @@
 var answer = "";
-const maxWrong = 5;
+const maxWrong = 6;
 var mistakes = 0;
 var guessed = [];
 var wordStatus = null;
 var gameOver = false;
 
-var wordBank = ["baratheon", "stark", "targaryen"];
+var wordBank = ["baratheon", "stark", "targaryen", "cersei", "tormund", "melisandre", "dragonstone"];
 
 
 
@@ -17,18 +17,12 @@ window.onload = function() {
         }
     });
     createLetters();
-    //window.setTimeout(intro, 3000);
     intro();
-    
   }
   
-//function fadeout() {
-    //document.getElementById("fadeout").style.opacity = "0"; 
-  //}
 
 
 function intro() {
-    //fadeout();
     window.setTimeout(logoFadeIn, 1000);
     logoFadeIn();
     window.setTimeout(fadein, 1000);
