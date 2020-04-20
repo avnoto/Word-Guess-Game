@@ -5,7 +5,9 @@
 }
 
 body {
-    background: #8da19f;
+    background-image: url("/assets/images/831489.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 
