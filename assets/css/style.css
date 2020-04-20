@@ -5,17 +5,8 @@
 }
 
 body {
-    background-image: url("/assets/images/831489.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+    background: #8da19f;
 }
-
-.big-banner {
-  background: none;
-}
-
-
-/* may want to change image, fix w/h as need */
 
 
 #welcome-container {
@@ -48,8 +39,8 @@ body {
 
 h1 {
   font-family: 'game_of_thronesregular';
-  font-size: 40px;
-  font-weight: 500;
+  font-size: 45px;
+  font-weight: 600;
   letter-spacing: 3px;
 }
 
@@ -64,6 +55,7 @@ h4 {
   width: 400px;
   opacity: 0;
   transition: 2s opacity;
+  margin-bottom: 0;
   
 }
 
@@ -72,7 +64,7 @@ h4 {
   transition: 3s opacity;
 }
 
-#instructions-container  {
+#instructionsPage  {
   display: none;
   position: absolute;
   top: 0;
@@ -109,7 +101,7 @@ h4 {
 #wordSpotlight {
   font-size: 32px;
   font-family: "game_of_thronesregular";
-  letter-spacing: 5px;
+  letter-spacing: 10px;
 
 }
 
@@ -136,4 +128,10 @@ h4 {
   font-family: 'game_of_thronesregular';
 }
 
+p {
+  font-size: 24px;
+}
 
+.float-right {
+  font-size: 24px;
+}

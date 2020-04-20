@@ -9,22 +9,22 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/fonts.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="jumbotron big-banner">
-        <div id="welcomePage">
-            <div id="welcome-container">
-                <img id="got-logo" src="assets/images/pngguru.com.png">
-                <div id="welcomeText">
-                    <h1>Word Guess</h1>
-                    <div id="buttonContainer">
-                        <button id="play" class="play-btn btn" onclick="startGame()">Play</button>
-                        <button id="instructions" class="inst-btn btn" onclick="instructions()">Instructions</button>
-                    </div>
+    <div id="welcomePage">
+        <div id="welcome-container">
+            <img id="got-logo" src="assets/images/pngguru.com.png">
+            <div id="welcomeText">
+                <h1>WORD GUESS</h1>
+                <div id="buttonContainer">
+                    <button id="play" class="play-btn btn" onclick="startGame()">Play</button>
+                    <button id="instructions" class="inst-btn btn" onclick="instructions()">Instructions</button>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <div id="instructionsPage">
         <div id="instructions-container">
@@ -33,8 +33,9 @@
                 <br>
                 <h1>How to Play</h1>
                 <br>
-                <p id=instText>Guess the correct word. If you get 5 incorrect guesses, you lose.
-                    Type or click on the letter you want to guess. When you guess a letter, that
+                <p>Guess the correct word. If you get 5 incorrect guesses, you lose.</p>
+                <br>
+                <p> Type or click on the letter you want to guess. When you guess a letter, that
                     letter will disappear from the letter bank.
                 </p>
                 <div id="buttonContainer">
@@ -49,7 +50,6 @@
             <h4> When you play the Game of Thrones </h4>
             <br>
             <h1> You Win or You Die. </h1>
-            <br>
             <br>
             <br>
             <div class="float-right">Wrong Guesses: <span id="mistakes">0</span> of <span id="maxWrong"></span>

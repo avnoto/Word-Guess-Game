@@ -19,6 +19,7 @@ window.onload = function() {
     createLetters();
     //window.setTimeout(intro, 3000);
     intro();
+    
   }
   
 //function fadeout() {
@@ -43,12 +44,12 @@ function fadein(){
 
 function instructions() {
     document.getElementById("welcomePage").style.display = "none";
-    document.getElementById("instructions-container").style.display = "block";
+    document.getElementById("instructionsPage").style.display = "block";
     document.getElementById("gamePage").style.display = "none";
     }
 
 function backToMain() {
-    document.getElementById("instructions-container").style.display = "none";
+    document.getElementById("instructionsPage").style.display = "none";
     document.getElementById("welcomePage").style.display = "block";
     document.getElementById("gamePage").style.display = "none";
 
@@ -62,7 +63,7 @@ function startGame() {
     gameOver = false;
     updateMistakes();
     document.getElementById("winLose").style.display = "none";
-    document.getElementById("instructions-container").style.display = "none";
+    document.getElementById("instructionsPage").style.display = "none";
     document.getElementById("welcomePage").style.display = "none";
     document.getElementById("gamePage").style.display = "block";
     document.getElementById("maxWrong").innerHTML = maxWrong;
@@ -140,5 +141,4 @@ function showLetters() {
         document.getElementById(letter).style.visibility = "visible";
     }
 }
-
 
