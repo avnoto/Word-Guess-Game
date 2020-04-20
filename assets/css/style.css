@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("/assets/images/831489.jpg");
+    background-image: url("../images/831489.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
