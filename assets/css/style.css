@@ -135,3 +135,11 @@ p {
 .float-right {
   font-size: 24px;
 }
+
+.btn {
+  margin: 8px;
+}
+
+#winLose {
+  font-size: 24px;
+}
