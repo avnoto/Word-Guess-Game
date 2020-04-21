@@ -27,8 +27,10 @@ function intro() {
     logoFadeIn();
     window.setTimeout(fadein, 1000);
 }
+
 function logoFadeIn() {
     document.getElementById("got-logo").style.opacity = "100";
+
 }
 
 function fadein(){
@@ -36,11 +38,13 @@ function fadein(){
 
 }
 
+
 function instructions() {
     document.getElementById("welcomePage").style.display = "none";
     document.getElementById("instructionsPage").style.display = "block";
     document.getElementById("gamePage").style.display = "none";
-    }
+
+}
 
 function backToMain() {
     document.getElementById("instructionsPage").style.display = "none";
@@ -61,8 +65,7 @@ function startGame() {
     document.getElementById("welcomePage").style.display = "none";
     document.getElementById("gamePage").style.display = "block";
     document.getElementById("maxWrong").innerHTML = maxWrong;
-
-            
+   
     randomWord();
     guessedWord();
 
@@ -109,10 +112,11 @@ function checkIfGameWon() {
 
 function checkIfGameLost() {
     if (mistakes === maxWrong) {
+        document.getElementById("wordSpotlight").innerHTML = answer
         let winLose = document.getElementById("winLose");
         winLose.style.display = "block";
         winLose.innerHTML = "You Lost!";
-        gameOver = true;
+
     }
 }
 
